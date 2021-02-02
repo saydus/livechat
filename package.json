@@ -39,6 +39,8 @@
     "prop-types": "^15.7.2",
     "react-switch": "^5.0.1",
     "regenerator-runtime": "^0.13.3",
+    "slate": "^0.59.0",
+    "slate-react": "^0.59.0",
     "styled-components": "^4.4.0",
     "styled-system": "^5.1.2",
     "url-loader": "^4.1.1",
