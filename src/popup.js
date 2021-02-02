@@ -9,7 +9,7 @@ import defaultTheme from 'themes/default';
 const Popup = () => {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Box width="200px" padding={3}>
+      <Box width="500px" padding={3} display="flex" justifyContent="center">
         <Example />
       </Box>
     </ThemeProvider>

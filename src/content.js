@@ -21,13 +21,9 @@ const App = () => {
   return (
     <StyleSheetManager target={styleContainer}>
       <ThemeProvider theme={defaultTheme}>
-        <Box
-          position="fixed"
-          bottom={3}
-          right={3}
-        >
+        {/* <Box position="fixed" bottom={3} right={3}>
           <Example />
-        </Box>
+        </Box> */}
       </ThemeProvider>
     </StyleSheetManager>
   );
