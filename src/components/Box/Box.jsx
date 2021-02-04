@@ -13,6 +13,9 @@ const propsToOmit = [
 
 const Box = styled(omitProps('div', propsToOmit))`
    box-sizing: border-box;
+   background: #E0E0E0;
+   margin: 0;
+   padding: 0;
    ${layout}
    ${space}
    ${flexbox}

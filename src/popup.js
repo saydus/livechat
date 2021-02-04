@@ -5,18 +5,18 @@ import { ThemeProvider } from 'styled-components';
 import Box from 'components/Box';
 import Example from 'components/Example';
 import defaultTheme from 'themes/default';
+import './index.css';
 
 const Popup = () => {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Box width="500px" padding={3} display="flex" justifyContent="center">
-        <Example />
-      </Box>
+      <Example />
     </ThemeProvider>
   );
 };
 
 const root = document.createElement('div');
+document.body.style.margin = 0;
 document.body.appendChild(root);
 
 ReactDOM.render(<Popup />, root);
