@@ -2,8 +2,13 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Box from 'components/Box';
 import Chat from 'components/Chat';
+import Amplify from 'aws-amplify';
+import awsconfig from '../../aws-exports';
+import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 // import Logo from 'assets/icons/logo.svg';
 // import PickleRick from 'assets/img/pickle-rick.jpg';
+
+Amplify.configure(awsconfig);
 
 const Example = styled.div`
   color: ${props => props.theme.palette.primary};
@@ -12,7 +17,7 @@ const Example = styled.div`
   overflow: hidden;
 `;
 
-export default () => {
+const ExampleApp = () => {
   // const greeting = chrome.i18n.getMessage('greeting');
   const [Title, setTitle] = useState('');
   chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
@@ -41,6 +46,7 @@ export default () => {
       >
         <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
           {Title}
+          <AmplifySignOut />
         </div>
         <div
           style={{
@@ -66,3 +72,5 @@ export default () => {
     </Example>
   );
 };
+
+export default withAuthenticator(ExampleApp);

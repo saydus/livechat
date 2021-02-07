@@ -29,7 +29,9 @@
     "webpack-manifest-version-sync-plugin": "^0.0.3"
   },
   "dependencies": {
+    "@aws-amplify/ui-react": "0.2.37",
     "@styled-system/prop-types": "^5.1.2",
+    "aws-amplify": "3.3.17",
     "classnames": "^2.2.6",
     "core-js": "^3.3.3",
     "css-loader": "^5.0.1",

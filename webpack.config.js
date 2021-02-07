@@ -16,7 +16,8 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.css'],
+    mainFields: ['browser', 'main', 'module'],
+    extensions: ['.mjs', '.js', '.jsx', '.css'],
     modules: [path.resolve(__dirname, 'src'), 'node_modules'],
     alias: {
       react: 'preact/compat',
