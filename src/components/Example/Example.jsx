@@ -3,12 +3,17 @@ import styled from 'styled-components';
 import Box from 'components/Box';
 import Chat from 'components/Chat';
 import Amplify from 'aws-amplify';
-import awsconfig from '../../aws-exports';
 import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 // import Logo from 'assets/icons/logo.svg';
 // import PickleRick from 'assets/img/pickle-rick.jpg';
 
-Amplify.configure(awsconfig);
+Amplify.configure({
+  Auth: {
+    region: 'eu-west-2',
+    userPoolId: 'eu-west-2_zYOrBLjQg',
+    userPoolWebClientId: '4brjlnfd2ajf11jdnkbdivi5og',
+  },
+});
 
 const Example = styled.div`
   color: ${props => props.theme.palette.primary};
@@ -56,7 +61,7 @@ const ExampleApp = () => {
             marginTop: 40,
           }}
         >
-          2 Online
+          200 Online
         </div>
       </div>
       <div
