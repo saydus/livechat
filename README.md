@@ -4,7 +4,7 @@ A browser extension that allows you to chat with people in your community browsi
 
 <br />
 <p align="center">
-    <img src=images/chatUI.png" alt="chatUI" width="400">
+    <img src="images/chatUI.png" alt="chatUI" width="400">
 
   <h3 align="center">LiveChat</h3>
 
