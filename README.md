@@ -4,9 +4,7 @@ A browser extension that allows you to chat with people in your community browsi
 
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+    <img src=images/chatUI.png" alt="chatUI" width="400">
 
   <h3 align="center">LiveChat</h3>
 
@@ -180,6 +178,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - [thehanimo](https://github.com/thehanimo)
 - [jakazzy](https://github.com/jakazzy)
 
-```
-
-```
+## Made possible by
+<a href="https://github.com/ElForastero/react-browser-extension-boilerplate">
+  <img src="logo.png" alt="Logo" width="200" />
+</a>
+<a href="https://github.com/adamgiebl/neumorphism/">
+  <img src="https://github.com/adamgiebl/neumorphism/blob/master/public/android-chrome-512x512.png" alt="Logo" width="80" />
+</a>
