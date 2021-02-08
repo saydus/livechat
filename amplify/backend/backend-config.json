@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "livechat383a123f": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

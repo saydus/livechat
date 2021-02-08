@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Box from 'components/Box';
 import Chat from 'components/Chat';
-// import Logo from 'assets/icons/logo.svg';
-// import PickleRick from 'assets/img/pickle-rick.jpg';
 
 const Example = styled.div`
   color: ${props => props.theme.palette.primary};
@@ -12,7 +10,7 @@ const Example = styled.div`
   overflow: hidden;
 `;
 
-export default () => {
+const ExampleApp = () => {
   // const greeting = chrome.i18n.getMessage('greeting');
   const [Title, setTitle] = useState('');
   chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
@@ -50,7 +48,7 @@ export default () => {
             marginTop: 40,
           }}
         >
-          2 Online
+          {/* 2 Online */}
         </div>
       </div>
       <div
@@ -66,3 +64,5 @@ export default () => {
     </Example>
   );
 };
+
+export default ExampleApp;
