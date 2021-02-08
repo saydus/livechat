@@ -54,7 +54,7 @@ A browser extension that allows you to chat with people in your community browsi
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://imgur.com/IJeKms6)
 
 Livechat is a browser extension and a chat application that enables community of enthusiasts discuss and share ideas on a topic. Every website or domain you visit in the browser has a unique chat room. You can discuss, share ideas, deliberate, simply talk to any one that visits the website.
 
