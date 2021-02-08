@@ -1,19 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Box from 'components/Box';
 import Chat from 'components/Chat';
-import Amplify from 'aws-amplify';
-import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
-// import Logo from 'assets/icons/logo.svg';
-// import PickleRick from 'assets/img/pickle-rick.jpg';
-
-Amplify.configure({
-  Auth: {
-    region: 'eu-west-2',
-    userPoolId: 'eu-west-2_zYOrBLjQg',
-    userPoolWebClientId: '4brjlnfd2ajf11jdnkbdivi5og',
-  },
-});
 
 const Example = styled.div`
   color: ${props => props.theme.palette.primary};
@@ -51,7 +39,6 @@ const ExampleApp = () => {
       >
         <div style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
           {Title}
-          <AmplifySignOut />
         </div>
         <div
           style={{
@@ -61,7 +48,7 @@ const ExampleApp = () => {
             marginTop: 40,
           }}
         >
-          200 Online
+          {/* 2 Online */}
         </div>
       </div>
       <div
@@ -78,4 +65,4 @@ const ExampleApp = () => {
   );
 };
 
-export default withAuthenticator(ExampleApp);
+export default ExampleApp;
