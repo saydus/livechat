@@ -2,31 +2,6 @@
 
 A browser extension that allows you to chat with people in your community browsing the same pages.
 
-# Usage
-
-1. Run `yarn`
-2. Run `yarn watch`
-3. Open chrome and navigate to the extensions tab (`chrome://extensions/`)
-4. Turn on Developer mode
-5. Choose Load unpacked and select the `build` folder from this project
-
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
-<!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
