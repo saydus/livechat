@@ -180,7 +180,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - [Saydus](https://github.com/saydus)
 - [thehanimo](https://github.com/thehanimo)
 - [jakazzy](https://github.com/jakazzy)
-
-```
-
-```
