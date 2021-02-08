@@ -1,4 +1,4 @@
-# livechat
+# Livechat
 
 A browser extension that allows you to chat with people in your community browsing the same pages.
 
@@ -52,8 +52,6 @@ A browser extension that allows you to chat with people in your community browsi
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://imgur.com/IJeKms6)
-
 Livechat is a browser extension and a chat application that enables community of enthusiasts discuss and share ideas on a topic. Every website or domain you visit in the browser has a unique chat room. You can discuss, share ideas, deliberate, simply talk to any one that visits the website.
 
 It is a fullstack serverless application that uses [React js and AWS services](https://github.com/saydus/livechat#builtwith)
@@ -84,7 +82,7 @@ Thes are prerequisites to set up the project and get up and running locally.
 
 ## Deploying the back end
 
-1. Clone the repo
+1. Clone the [back-end repo](https://github.com/saydus/livechat-backend)
 
 ```sh
 git clone https://github.com/full-stack-serverless/cdk-appsync-chat.git
@@ -174,7 +172,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contributors
 
-- [Saydus](https://github.com/saydus)
+- [saydus](https://github.com/saydus)
 - [thehanimo](https://github.com/thehanimo)
 - [jakazzy](https://github.com/jakazzy)
 
