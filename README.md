@@ -108,7 +108,7 @@ cdk deploy
 
 Once the project has been deployed, you'll be given the resources needed to configure the client-side React application.
 
-## Setting uo the front end
+#### Setting up the front end ( & installing the chrome extension)
 
 1. Clone the client application
 
@@ -116,27 +116,60 @@ Once the project has been deployed, you'll be given the resources needed to conf
 git clone git@github.com:saydus/livechat.git
 ```
 
-3. Change into the client directory and install dependencies:
+2. Change into the client directory:
 
 ```sh
 cd livechat
 
+```
 
+3. Install the dependencies
+
+```
 yarn
 ```
 
-4. create **src/aws-exports.js** and update with the outputs from CDK.
+4.  create a file `aws-exports.js`in the src directory
 
-5. Run the app
+```
+touch src/aws-exports.js
+```
+
+5. Update this file `aws-exports.js` with the outputs from deploying the backend after running cdk deploy
+```sh
+const config = {
+  Auth: {
+    region: '',
+    userPoolId: '',
+    userPoolWebClientId: '',
+  },
+  aws_appsync_graphqlEndpoint:
+    '',
+  aws_appsync_region: '',
+  aws_appsync_authenticationType: 'AMAZON_COGNITO_USER_POOLS',
+};
+
+export default config;
+```
+
+
+6. Run the application with the command
 
 ```sh
 
 yarn watch
 ```
 
-6. Open chrome and navigate to the extensions tab (`chrome://extensions/`)
-7. Turn on Developer mode
-8. Choose Load unpacked and select the `build` folder from this project
+7. Now in the browser, open chrome and navigate to the extensions tab (`chrome://extensions/`)
+
+8. On the extreme right, Turn on Developer mode
+
+9. On the left, choose the Load unpacked and select the `build` folder from this project
+
+10. In the browser, select this `React Web Extension Boilerplate` from the list of extensions.
+    and chat away
+
+
 
 <!-- USAGE EXAMPLES -->
 
